@@ -5,6 +5,29 @@ body {
     background-color:#ffffff;
     font-family:'Dancing Script';
     text-align: center;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    background-image: url('./images/code.jpg');
+    opacity: 0.5;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    /* overflow: hidden; */
+    overflow: auto;
 }
 
 img{
@@ -12,41 +35,69 @@ img{
 }
 
 h1{
-    color: #3a4750;
+    color: white;
     font-size: 80px;
     line-height: 1.5;
-    margin: 10px  ;
+    margin: 10px;
+    font-weight: bold;
 }
 
 p{
-    color: #4d606e;
+    color:white;
     font-family: 'Open-Sans';
     line-height: 1.5;
     margin: 30px;
 }
 
 h2{
-    color: #3a4750;
+    color: white;
     font-size: 32px;
     line-height: 1.5;
 }
 
-.introduction{
-    background-color:#fbf0f0;
+.introduction {
+    background-color:#484848;
     border: 1px  ;
     padding: 24px;
     margin: 50px 400px;
     border-radius: 20px ;
     box-shadow: 0 5px 15px lightgrey;
+    z-index: 1;
+    opacity: 0.8;
 }
 
-.contact{
-    background-color:#fbf0f0;
+.languages{
+    background-color:#484848;
     border: 1px  ;
     padding: 24px;
     margin: 50px 400px;
     border-radius: 10px ;
     box-shadow: 0 5px 15px lightgrey;
+    opacity: 0.8;
+}
+
+.languages-inline{
+    color: white;
+    font-family: 'Open-Sans';
+    line-height: 1.5;
+}
+
+.languages ul{
+    padding-left: 0;
+}
+
+.languages li {
+    list-style: none;
+}
+
+.contact{
+    background-color:#484848;
+    border: 1px  ;
+    padding: 24px;
+    margin: 50px 400px;
+    border-radius: 10px ;
+    box-shadow: 0 5px 15px lightgrey;
+    opacity: 0.8;
 }
 
 .list-inline{
@@ -58,23 +109,14 @@ h2{
     display: inline-block;
 }
 
-.btn-primary{
-    font-family: 'Open-Sans';
-    background-color:#3a4750 ;
-    color: white;
-    padding: 8px 24px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
 .fab{
     font-size: 50px;
-    color: #4d606e;
+    color: white;
     margin:8px 8px;
 }
 
 .icon:hover{
-    color: white;
+    color: black;
 }
 
 .btn-primary:hover{
